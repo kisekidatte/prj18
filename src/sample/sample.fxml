@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.effect.*?>
+<?import javafx.scene.layout.*?>
+
+<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="525.0" prefWidth="405.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.Controller">
+    <children>
+        <TextField fx:id="Message" layoutX="10.0" layoutY="486.0" onAction="#onEnter" prefHeight="25.0" prefWidth="317.0" promptText="type here...">
+            <cursor>
+                <Cursor fx:constant="TEXT" />
+            </cursor>
+            <effect>
+                <ColorAdjust />
+            </effect>
+        </TextField>
+        <Button fx:id="Send" layoutX="339.0" layoutY="486.0" mnemonicParsing="false" onAction="#SendButton" text="Send">
+            <cursor>
+                <Cursor fx:constant="CLOSED_HAND" />
+            </cursor>
+            <effect>
+                <ColorAdjust brightness="-0.43" contrast="1.0" />
+            </effect>
+        </Button>
+        <TextArea fx:id="Chat" layoutX="11.0" layoutY="26.0" prefHeight="444.0" prefWidth="384.0" />
+    </children>
+    <effect>
+        <ColorAdjust brightness="-0.12" contrast="0.14" hue="-1.0" />
+    </effect>
+</Pane>
